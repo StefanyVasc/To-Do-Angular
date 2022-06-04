@@ -10,9 +10,10 @@ section {
   margin-top: 20px;
 
   &.loading {
-    background-image: url("../../../../../assets/img/bg-tasks.svg");
+    background-image: url("../../../../../assets/img/to-do-list.png");
     background-repeat: no-repeat;
     background-position: center 30px;
+    background-size: 50%;
   }
 
   ul {
@@ -41,6 +42,10 @@ section {
 
           &.checked {
             text-decoration: line-through;
+          }
+
+          &:focus {
+            accent-color: $primary-color;
           }
         }
       }
